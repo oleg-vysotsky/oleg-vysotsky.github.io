@@ -1,0 +1,24 @@
+.Section-Title
+{
+    filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pictures/section-title.jpg', sizingMethod='scale');
+    -ms-filter : "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pictures/section-title.jpg', sizingMethod='scale')";
+    background : none;
+}
+
+.Section-About .Portrait
+{
+
+    filter     : progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pictures/portrait.jpg', sizingMethod='scale');
+    -ms-filter : "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pictures/portrait.jpg', sizingMethod='scale')";
+    background : none;
+}
+
+
+.Pre-Loading
+{
+    display : none;
+}
+
+.Header-Wrapper:before{
+    display: none;
+}

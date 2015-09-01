@@ -1,0 +1,1430 @@
+/***********************************************************************************************************************
+** Presets
+***********************************************************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700,300,600,400&subset=latin,cyrillic,cyrillic-ext);
+
+body
+{
+    padding     : 0px;
+    margin      : 0px;
+    height      : 100%;
+    line-height : 2;
+    font-size   : 13px;
+    overflow    : hidden;
+}
+
+#preloadedImages
+{
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url('/pictures/portrait_hover.jpg') no-repeat center;
+}
+
+*
+{
+    margin             : 0px;
+    padding            : 0px;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing    : border-box;
+    box-sizing         : border-box;
+    font-family        : 'Open Sans', sans-serif;
+}
+
+a
+{
+    color           : inherit;
+    text-decoration : none;
+    font-family     : inherit;
+}
+
+ul
+{
+    list-style : none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    line-height : 1.2;
+}
+
+h4, h5, h6
+{
+    letter-spacing : 1px;
+}
+
+h5
+{
+    font-size : 1.2em;
+}
+
+img
+{
+    border : none;
+}
+
+.Main
+{
+    overflow : hidden;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Pre-Loading
+***********************************************************************************************************************/
+
+.Pre-Loading
+{
+    width      : 100%;
+    height     : 100%;
+
+    /*background: #fff;*/
+    position   : fixed;
+    z-index    : 99999;
+    background : #fff;
+}
+
+.Pre-Loading .Round-First
+{
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+
+    width             : 140px;
+    height            : 140px;
+    margin            : -70px 0 0 -70px;
+
+    border-radius     : 50% 50% 50% 50%;
+    border-left       : 6px solid #888;
+
+    -webkit-animation : rotate 1.3s linear infinite normal;
+    -moz-animation    : rotate 1.3s linear infinite normal;
+    -o-animation      : rotate 1.3s linear infinite normal;
+    -ms-animation     : rotate 1.3s linear infinite normal;
+    animation         : rotate 1.3s linear infinite normal;
+}
+
+.Pre-Loading .Round-Second
+{
+    top               : 10px;
+    left              : 10px;
+    position          : relative;
+
+    width             : 120px;
+    height            : 120px;
+
+    border-radius     : 50% 50% 50% 50%;
+    border-left       : 3px solid #888;
+
+    -webkit-animation : rotate 3.3s linear infinite normal;
+    -moz-animation    : rotate 3.3s linear infinite normal;
+    -o-animation      : rotate 3.3s linear infinite normal;
+    -ms-animation     : rotate 3.3s linear infinite normal;
+    animation         : rotate 3.3s linear infinite normal;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Section Title
+***********************************************************************************************************************/
+
+.Section-Title
+{
+    position              : fixed;
+    display               : table;
+
+    top                   : 0px;
+    width                 : 100%;
+    height                : 100%;
+    min-height            : 600px;
+
+    filter                : progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pictures/section-title.jpg', sizingMethod='scale');
+    -ms-filter            : "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/pictures/section-title.jpg', sizingMethod='scale')";
+    background            : url("/pictures/section-title.jpg") no-repeat center;
+    background-size       : cover;
+    background-attachment : fixed;
+
+    text-align            : center;
+}
+
+.Section-Title .Vertical
+{
+    position       : relative;
+    display        : table-cell;
+    width          : 100%;
+    vertical-align : middle;
+    margin-top     : 0;
+    text-align     : center;
+    margin-bottom  : 0;
+    float          : none;
+}
+
+.Section-Title:after
+{
+    width              : 50%;
+    height             : 100%;
+
+    content            : ' ';
+    position           : absolute;
+    right              : 0;
+    background         : rgba(255, 255, 255, 0.3);
+    -webkit-transition : all 1.3s ease 0s;
+    -moz-transition    : all 1.3s ease 0s;
+    -o-transition      : all 1.3s ease 0s;
+    -ms-transition     : all 1.3s ease 0s;
+}
+
+.Section-Title:before
+{
+    width              : 50%;
+    height             : 100%;
+
+    content            : ' ';
+    position           : absolute;
+    background         : rgba(255, 255, 255, 0.61);
+    -webkit-transition : all 1.3s ease 0s;
+    -moz-transition    : all 1.3s ease 0s;
+    -o-transition      : all 1.3s ease 0s;
+    -ms-transition     : all 1.3s ease 0s;
+
+}
+
+.Section-Title.White:after
+{
+    background         : rgba(255, 255, 255, 0.8);
+    -webkit-transition : all 2.3s ease 0s;
+    -moz-transition    : all 2.3s ease 0s;
+    -o-transition      : all 2.3s ease 0s;
+    -ms-transition     : all 2.3s ease 0s;
+}
+
+.Section-Title.White:before
+{
+    background         : rgba(255, 255, 255, 0.9);
+    -webkit-transition : all 2.3s ease 0s;
+    -moz-transition    : all 2.3s ease 0s;
+    -o-transition      : all 2.3s ease 0s;
+    -ms-transition     : all 2.3s ease 0s;
+}
+
+.Section-Title .Wrapper-Hello
+{
+    position   : absolute;
+
+    top        : 100px;
+    width      : 100%;
+
+    text-align : center;
+    z-index    : 10;
+}
+
+.Section-Title .Hello
+{
+    display        : inline-block;
+    font-weight    : 700;
+    text-transform : uppercase;
+
+    border         : 3px solid #000;
+    color          : #000;
+    background     : #fff;
+    background     : rgba(255, 255, 255, 0.3);
+    letter-spacing : 2px;
+
+    padding        : 10px 30px;
+
+}
+
+.Section-Title .Name
+{
+    font-size      : 60px;
+    margin-bottom  : 20px;
+    font-weight    : 700;
+    text-transform : uppercase;
+    position       : relative;
+    z-index        : 3;
+    letter-spacing : 10px;
+}
+
+.Section-Title .Profession
+{
+    position       : relative;
+    display        : inline-block;
+
+    z-index        : 3;
+    font-weight    : 400;
+    text-transform : uppercase;
+    border-bottom  : 1px solid #000;
+    padding        : 10px;
+    line-height    : 1.2;
+    letter-spacing : 4px;
+    font-family    : Georgia;
+}
+
+.Section-Title .Wrapper-Lang
+{
+    position   : absolute;
+
+    bottom     : 50px;
+    width      : 100%;
+
+    text-align : center;
+    z-index    : 10;
+}
+
+.Section-Title .Lang
+{
+    display            : inline-block;
+    font-weight        : 700;
+    text-transform     : uppercase;
+
+    /*border         : 3px solid #000;*/
+    color              : #000;
+    background         : #fff;
+    background         : rgba(255, 255, 255, 0.3);
+    letter-spacing     : 2px;
+    text-indent        : 6px;
+
+    padding            : 10px 30px;
+    cursor             : pointer;
+
+    transition         : all 0.3s ease 0s;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    -ms-transition     : all 0.3s ease 0s;
+}
+
+.Section-Title .Lang:hover
+{
+    background         : rgba(0, 0, 0, 0.5);
+    color              : #ebebeb;
+
+    transition         : all 0.3s ease 0s;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    -ms-transition     : all 0.3s ease 0s;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Menu
+***********************************************************************************************************************/
+
+.Menu
+{
+    position           : relative;
+    z-index            : 20;
+    width              : 100%;
+    top                : 0px;
+
+    transition         : background 0.8s ease 0s;
+    -webkit-transition : background 0.8s ease 0s;
+    -moz-transition    : background 0.8s ease 0s;
+    -o-transition      : background 0.8s ease 0s;
+    -ms-transition     : background 0.8s ease 0s;
+    padding            : 10px 0;
+    background         : #fff;
+    background         : rgba(255, 255, 255, 1);
+    left               : 0;
+    border-bottom      : 1px solid #ebebeb;
+    text-align         : center;
+}
+
+.Menu .Sections
+{
+    padding : 8px 15px;
+}
+
+.Menu .Sections li
+{
+    display : inline-block;
+
+}
+
+.Menu .Sections li a
+{
+    font-weight        : 700;
+    color              : #323232;
+    outline            : none;
+    font-size          : 12px;
+    transition         : all 0.3s ease 0s;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    -ms-transition     : all 0.3s ease 0s;
+    text-decoration    : none;
+    text-transform     : uppercase;
+    color              : #7d7d7d;
+}
+
+.Menu .Sections li a.Active
+{
+    color : black;
+}
+
+.Menu .Sections li a:hover
+{
+    color : black;
+}
+
+.Menu .Sections li + li:before
+{
+    padding : 0 5px;
+    color   : #ccc;
+    content : "/\00a0";
+}
+
+.Menu .Social li
+{
+    display   : inline-block;
+    color     : #7d7d7d;
+    width     : 20px;
+    font-size : 14px;
+}
+
+.Menu .Social li:hover
+{
+    color : black;
+}
+
+.Menu .Social
+{
+    position : absolute;
+    right    : 18px;
+    top      : 18px;
+    color    : #7d7d7d;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Section Title
+***********************************************************************************************************************/
+
+.Content-Wrapper
+{
+    position   : relative;
+    z-index    : 10;
+
+    background : white;
+    width      : 100%;
+    height     : 100%;
+}
+
+.Section-About
+{
+    width    : 100%;
+    display  : table;
+    position : relative;
+}
+
+.Section-About .Portrait
+{
+    position        : absolute;
+
+    width           : 50%;
+    height          : 100%;
+    float           : left;
+    background      : url('/pictures/portrait.jpg') no-repeat center;
+    background-size : cover;
+    -webkit-transition : all 1.2s ease  0;
+    -webkit-transition : all 1.2s ease  0;
+    -moz-transition    : all 1.2s ease  0;
+    -moz-transition    : all 1.2s ease  0;
+    -o-transition      : all 1.2s ease  0;
+    -o-transition      : all 1.2s ease  0;
+    transition         : all 1.2s ease  0;
+    transition         : all 1.2s ease  0;
+}
+
+.Section-About .Portrait:hover {
+    background: url('/pictures/portrait_hover.jpg') no-repeat center;
+    background-size: cover;
+    -webkit-transition : all 2s ease 0.3s;
+    -moz-transition    : all 2s ease 0.3s;
+    -o-transition      : all 2s ease 0.3s;
+    transition         : all 2s ease 0.3s;
+}
+
+.Section-About .Portrait .Overfly
+{
+    /*display: none;*/
+    /*background : rgba(255, 255, 255, 0.6);*/
+    /*box-shadow         : 1000px 0 0 0 rgba(255, 255, 255, 0.6) inset;*/
+    width              : 100%;
+    height             : 100%;
+    position           : absolute;
+    -webkit-transition : all ease 0.6s;
+    -moz-transition    : all ease 0.6s;
+    -o-transition      : all ease 0.6s;
+    transition         : all ease 0.6s;
+}
+
+.Section-About .Portrait:hover .Overfly
+{
+    /*box-shadow         : 0 0 0 0 rgba(255, 255, 255, 0.6) inset;*/
+    -webkit-transition : all ease 0.6s;
+    -moz-transition    : all ease 0.6s;
+    -o-transition      : all ease 0.6s;
+    transition         : all ease 0.6s;
+}
+
+.Section-About .Portrait .Overfly-Content
+{
+    bottom     : 0px;
+    position   : absolute;
+    padding    : 40px;
+    text-align : right;
+    width      : 100%;
+}
+
+.Section-About .Portrait .Overfly-Content h4
+{
+    font-weight        : bold;
+    margin-top         : 20px;
+    margin-bottom      : 10px;
+    text-transform     : uppercase;
+    letter-spacing     : 2.5px;
+    font-size          : 3em;
+    line-height        : 1.2;
+    color              : #000;
+    text-shadow: 0px 0px 1px #ebebeb;
+
+    -webkit-transition : all ease 0.6s;
+    -moz-transition    : all ease 0.6s;
+    -o-transition      : all ease 0.6s;
+    transition         : all ease 0.6s;
+}
+
+.Section-About .Portrait:hover .Overfly-Content h4
+{
+    text-shadow: 0px 0px 1px #ebebeb,0px 0px 1px #EBEBEB;
+    /*color              : #ebebeb;*/
+    /*text-shadow        : 0 0 1px black;*/
+    -webkit-transition : all ease 0.6s;
+    -moz-transition    : all ease 0.6s;
+    -o-transition      : all ease 0.6s;
+    transition         : all ease 0.6s;
+}
+
+.Section-About .Portrait .Overfly-Content blockquote
+{
+    text-transform : uppercase;
+    font-size      : 12px;
+    font-family    : Georgia;
+    letter-spacing : 1px;
+    line-height    : 1.2;
+    font-size      : 1.2em;
+    margin-top     : 10px;
+    margin-bottom  : 10px;
+    text-shadow: 0px 0px 1px #ebebeb,0px 0px 1px #EBEBEB;
+}
+
+.Section-About .Portrait:hover .Overfly-Content blockquote
+{
+    text-shadow: 0px 0px 1px #ebebeb,0px 0px 1px #EBEBEB;
+    /*color              : #ebebeb;*/
+    /*text-shadow        : 0 0 1px black;*/
+    -webkit-transition : all ease 0.6s;
+    -moz-transition    : all ease 0.6s;
+    -o-transition      : all ease 0.6s;
+    transition         : all ease 0.6s;
+}
+
+.Section-About .Info
+{
+    width            : 50%;
+    height           : 100%;
+    float            : right;
+    background-color : #323232;
+}
+
+.Section-About .Info .Some-Words
+{
+    background-color : #f5f5f5;
+    padding          : 40px;
+}
+
+.Section-About .Info .Some-Words h4
+{
+    letter-spacing : 2px;
+    font-size      : 2em;
+    line-height    : 1.2;
+    margin-bottom  : 10px;
+    font-weight    : 400;
+}
+
+.Section-About .Info .Some-Words p
+{
+    max-width : 550px;
+    color     : #7d7d7d;
+    margin    : 0 0 10px;
+}
+
+.Section-About .Contacts
+{
+    padding : 40px;
+    color   : #ebebeb;
+}
+
+.Section-About .Contacts i
+{
+    margin-right : 10px;
+}
+
+.Section-About .Contacts b
+{
+    width   : 100px;
+    display : inline-block;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Section Services
+***********************************************************************************************************************/
+
+.Section-Services
+{
+    width      : 1200px;
+    margin     : 0 auto;
+    background : white;
+    display    : table;
+}
+
+.Section-Services .Service .animated{
+    opacity: 0;
+}
+.Section-Services .Service
+{
+    width      : 33.33%;
+    float      : left;
+    display    : inline-block;
+    text-align : center;
+    padding    : 80px 0;
+}
+
+.Section-Services .Service.Middle
+{
+
+    border-right : #ebebeb solid 1px;
+    border-left  : #ebebeb solid 1px;
+}
+
+.Section-Services .Service i
+{
+    display   : block;
+    clear     : both;
+    font-size : 25px;
+    color     : #7d7d7d;
+}
+
+.Section-Services .Service h5
+{
+    display        : inline-block;
+    text-transform : uppercase;
+    line-height    : 1.2;
+    font-family    : 'Open Sans';
+    letter-spacing : 1px;
+    font-weight    : 400;
+    font-size      : 1.2em;
+    margin         : 10px 0px;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Header
+***********************************************************************************************************************/
+
+.Header-Wrapper
+{
+    position : relative;
+}
+
+header
+{
+    width         : 100%;
+    text-align    : center;
+    background    : #f5f5f5;
+    padding       : 40px 0;
+    position      : relative;
+    border-top    : 1px solid #ebebeb;
+    border-bottom : 1px solid #ebebeb;
+}
+
+.Header-Wrapper:before
+{
+    content           : "";
+    z-index           : 1;
+    position          : absolute;
+    width             : 24px;
+    height            : 24px;
+    background        : #f5f5f5;
+    left              : 50%;
+    margin-left       : -12px;
+    bottom            : -13px;
+    border-right      : 1px solid #ebebeb;
+    border-bottom     : 1px solid #ebebeb;
+
+    transform         : rotate(45deg);
+    -webkit-transform : rotate(45deg);
+    -moz-transform    : rotate(45deg);
+    -o-transform      : rotate(45deg);
+    -ms-transform     : rotate(45deg);
+}
+
+header h2
+{
+    font-weight    : 700;
+    text-transform : uppercase;
+    letter-spacing : 2.5px;
+    font-size      : 3em;
+}
+
+header i
+{
+    color : #7d7d7d;
+}
+
+header .Header-Icon
+{
+    position : relative;
+    display  : inline-block;
+}
+
+header .Header-Icon:before
+{
+    content    : "";
+    position   : absolute;
+    height     : 1px;
+    background : #323232;
+    width      : 30px;
+    left       : -40px;
+    top        : 50%;
+}
+
+header .Header-Icon:after
+{
+    content    : "";
+    position   : absolute;
+    height     : 1px;
+    background : #323232;
+    width      : 30px;
+    right      : -40px;
+    top        : 50%;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** CV
+***********************************************************************************************************************/
+
+.Section-CV
+{
+    width      : 1200px;
+    margin     : 0 auto;
+    text-align : center;
+    background : white;
+    position   : relative;
+    padding    : 40px 0;
+
+}
+
+.Section-CV:before
+{
+    content    : "";
+    position   : absolute;
+    left       : 50%;
+    top        : 0;
+    height     : 100%;
+    width      : 1px;
+    background : #ebebeb;
+}
+
+.Section-CV p
+{
+    clear : both;
+}
+
+.Section-CV .Number b
+{
+    font-style     : italic;
+    left           : inherit;
+    padding-bottom : 10px;
+    font-size      : 70px;
+    color          : #ebebeb;
+    font-weight    : 400;
+    line-height    : 70px;
+    font-family    : Georgia;
+}
+
+.Section-CV .CV.Right .Number
+{
+    text-align    : right;
+    padding-right : 60px;
+    margin-top    : 20px;
+}
+
+.Section-CV .CV.Left .Number
+{
+    text-align   : left;
+    padding-left : 60px;
+    margin-top   : 20px;
+}
+
+.Section-CV .Number img
+{
+    display    : block;
+    max-height : 100px;
+    max-width  : 100%;
+    opacity: 0.12;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+
+.Section-CV .Number img:hover
+{
+    opacity: 1;
+    -webkit-transition : all ease-in 0.6s;
+    -moz-transition    : all ease-in 0.6s;
+    -o-transition      : all ease-in 0.6s;
+    transition         : all ease-in 0.6s;
+
+}
+
+.Section-CV .CV.Right .Number img
+{
+    clear : both;
+    float : right;
+
+}
+
+.Section-CV .CV .CVInfo ul{
+	list-style: disc;
+	color: #7d7d7d;
+}
+.Section-CV .CV .CVInfo ul span{
+	font-style: italic;
+	width: 150px;
+	display: inline-block;
+}
+
+.Section-CV .CV.Right .CVInfo
+{
+    text-align   : left;
+    padding-left : 60px;
+}
+
+.Section-CV .CV.Left .CVInfo
+{
+    text-align    : right;
+    padding-right : 60px;
+}
+
+.Section-CV:after, .Section-CV .CV
+{
+    clear : both;
+}
+
+.Section-CV .CV
+{
+    position : relative;
+}
+
+.Section-CV .CVInfo
+{
+    position      : relative;
+    padding       : 20px;
+
+    border-top    : 1px solid #ebebeb;
+    border-bottom : 1px solid #ebebeb;
+}
+
+.Section-CV .CVInfo
+{
+    width : 50%;
+    float : left;
+}
+
+.Section-CV .Number
+{
+    width : 50%;
+    float : left;
+}
+
+.Section-CV .CV i
+{
+    width       : 40px;
+    height      : 40px;
+    line-height : 40px;
+    text-align  : center;
+    background  : #000;
+    color       : #fff;
+    position    : absolute;
+    top         : 20px;
+    font-size   : 14px;
+}
+
+.Section-CV .CV h5
+{
+    text-transform : uppercase;
+    margin         : 10px 0;
+}
+
+.Section-CV .CV h6
+{
+    font-family : Georgia;
+    font-size   : 13px;
+    font-weight : 400;
+    line-height : 2;
+}
+
+.Section-CV .CV p
+{
+    color       : #7d7d7d;
+    line-height : 2;
+}
+
+.Section-CV .CV p.Years
+{
+    color       : #000;
+    line-height : 2;
+    font-family : Georgia;
+}
+
+.Section-CV .CV.Right i
+{
+    left : 0px;
+
+}
+
+.Section-CV .CV.Left i
+{
+    right : 0px;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** CV
+***********************************************************************************************************************/
+
+.Portfolio
+{
+    display    : table;
+    background : #fff;
+    width      : 1200px;
+    margin     : 60px auto;
+}
+
+.Portfolio-Item-Box
+{
+    width         : 33.33%;
+    display       : inline-block;
+    float         : left;
+    padding-right : 15px;
+    padding-left  : 15px;
+}
+
+.Portfolio-Item
+{
+
+    padding       : 5px;
+    margin-bottom : 30px;
+    background    : #fff;
+    border        : 1px solid #ebebeb;
+    position      : relative;
+    overflow      : hidden;
+    height        : 250px;
+}
+
+.Portfolio-Item img
+{
+    width    : 100%;
+    display  : inline-block;
+    position : relative;
+}
+
+.Portfolio-Item-Image
+{
+    height   : 100%;
+    overflow : hidden;
+    position : relative;
+}
+
+.Portfolio-Title
+{
+    position           : absolute;
+    bottom             : 0px;
+    text-align         : center;
+    padding            : 8px 0px;
+    background         : rgba(255, 255, 255, 0.82);
+    margin             : 0 auto;
+    width              : 100%;
+    font-weight        : bold;
+
+    -webkit-transition : all ease 0.3s;
+    -moz-transition    : all ease 0.3s;
+    -o-transition      : all ease 0.3s;
+    transition         : all ease 0.3s;
+}
+
+.Portfolio-Item:hover .Portfolio-Title
+{
+    background         : white;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Item:hover .Portfolio-Lightbox
+{
+    opacity            : 1;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Lightbox
+{
+    position           : absolute;
+    margin             : 5px;
+    display            : inline-block;
+    width              : 40px;
+    height             : 40px;
+    left               : 50%;
+    margin-left        : -45px;
+    top                : 80px;
+    border-radius      : 5px !important;
+    background         : rgba(0, 0, 0, 0.5);
+    text-align         : center;
+    border             : 1px solid white;
+    cursor             : pointer;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+    opacity            : 0;
+}
+
+.Portfolio-Lightbox:hover
+{
+    background         : white;
+    border             : 1px solid #ebebeb;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Lightbox:hover i
+{
+    color              : black;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Lightbox i
+{
+    color              : white;
+    margin-top         : 12px;
+    display            : inline-block;
+    font-size          : 13px;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Item:hover .Portfolio-Link
+{
+    opacity            : 1;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Link
+{
+    position           : absolute;
+    margin             : 5px;
+    display            : inline-block;
+    width              : 40px;
+    height             : 40px;
+    left               : 50%;
+    margin-left        : 5px;
+    top                : 80px;
+    border-radius      : 5px !important;
+    background         : rgba(0, 0, 0, 0.5);
+    text-align         : center;
+    border             : 1px solid white;
+    cursor             : pointer;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+    opacity            : 0;
+}
+
+.Portfolio-Link:hover
+{
+    background         : white;
+    border             : 1px solid #ebebeb;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Link:hover i
+{
+    color              : black;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+.Portfolio-Link i
+{
+    color              : white;
+    margin-top         : 12px;
+    display            : inline-block;
+    font-size          : 13px;
+    -webkit-transition : all ease-out 0.3s;
+    -moz-transition    : all ease-out 0.3s;
+    -o-transition      : all ease-out 0.3s;
+    transition         : all ease-out 0.3s;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Skills
+***********************************************************************************************************************/
+
+.Section-Skills
+{
+    display    : table;
+    background : #fff;
+    width      : 1200px;
+    margin     : 0px auto;
+}
+
+.Skill
+{
+    display       : inline-block;
+    float         : left;
+    width         : 25%;
+    border-left   : 1px solid #ebebeb;
+    text-align    : center;
+    padding: 80px 0px;
+    border-bottom : 1px solid #ebebeb;
+
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.Skill.First-Item
+{
+    border-left : 0;
+}
+
+.Skill.Last-Row
+{
+    border-bottom : 0;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Contacts
+***********************************************************************************************************************/
+
+.Section-Connect
+{
+    display : table;
+    width   : 1200px;
+    margin  : 0 auto;
+
+}
+
+.Section-Connect .Map
+{
+    display  : inline-block;
+    width    : 50%;
+    height   : 600px;
+    float    : left;
+    position : relative;
+}
+
+.Section-Connect .Form
+{
+    display : inline-block;
+
+    width   : 50%;
+    height  : 400px;
+    float   : left;
+    padding : 40px;
+}
+
+.Section-Connect form input:focus, .Section-Connect form textarea:focus
+{
+    outline : none;
+    background: #ebebeb;
+    color: #000;
+}
+
+.Section-Connect form input, .Section-Connect form textarea
+{
+    display       : block;
+    clear         : both;
+    box-shadow    : none;
+    height        : 45px;
+    width         : 100%;
+    padding       : 6px 12px;
+    font-size     : 14px;
+    line-height   : 1.4;
+    color         : #555;
+    border        : 1px solid #ccc;
+    margin-bottom : 10px;
+}
+
+.Section-Connect form textarea
+{
+    height : 135px;
+}
+
+.Section-Connect form label
+{
+    display     : block;
+    color       : #7d7d7d;
+    clear       : both;
+    font-weight : 700;
+}
+
+.Section-Connect button
+{
+    color              : #fff;
+    background-color   : #000;
+
+    font-weight        : 700;
+    text-transform     : uppercase;
+    font-size          : 12px;
+    min-width          : 150px;
+    letter-spacing     : 1px;
+    padding            : 12px;
+    border             : 1px solid #000;
+    cursor             : pointer;
+    margin-top         : 10px;
+    float              : right;
+
+    -webkit-transition : all 0.5s ease 0s;
+    -moz-transition    : all 0.5s ease 0s;
+    -o-transition      : all 0.5s ease 0s;
+    -ms-transition     : all 0.5s ease 0s;
+}
+
+.Section-Connect button:hover
+{
+    box-shadow         : 0px 0px 20px 30px white inset;
+    color              : black;
+    border             : 1px solid black;
+    -webkit-transition : all 0.5s ease 0s;
+    -moz-transition    : all 0.5s ease 0s;
+    -o-transition      : all 0.5s ease 0s;
+    -ms-transition     : all 0.5s ease 0s;
+}
+
+.Section-Connect .Overlay
+{
+    background : rgba(245, 245, 245, 0.5);
+    position   : absolute;
+    top        : 0px;
+    width      : 100%;
+    height     : 100%;
+}
+
+/**********************************************************************************************************************/
+
+/***********************************************************************************************************************
+** Contacts
+***********************************************************************************************************************/
+
+footer
+{
+    background : #323232;
+    color      : white;
+    text-align : center;
+    display    : table;
+    width      : 100%;
+}
+
+footer .Social
+{
+    margin : 20px 0px 10px;
+}
+
+footer .Social li
+{
+    display : inline-block;
+}
+
+footer .Social a
+{
+    display            : inline-block;
+    font-size          : 16px;
+    width              : 30px;
+    height             : 30px;
+    background         : #282828;
+    margin             : 0px 5px;
+
+    -webkit-transition : all 0.5s ease 0s;
+    -moz-transition    : all 0.5s ease 0s;
+    -o-transition      : all 0.5s ease 0s;
+    -ms-transition     : all 0.5s ease 0s;
+}
+
+footer .Social a:hover
+{
+    color              : #282828;
+    box-shadow         : 0px 0px 0px 20px white inset;
+    cursor             : pointer;
+
+    -webkit-transition : all 0.8s ease 0s;
+    -moz-transition    : all 0.8s ease 0s;
+    -o-transition      : all 0.8s ease 0s;
+    -ms-transition     : all 0.8s ease 0s;
+}
+
+footer p
+{
+    color         : #7d7d7d;
+    font-size     : 12px;
+    margin-bottom : 0px;
+}
+
+footer:after
+{
+    height     : 5px;
+    position   : absolute;
+    content    : ' ';
+    left       : 0px;
+    right      : 0px;
+    bottom     : 0px;
+    background : #505050;
+}
+
+footer a.Home
+{
+    width              : 46px;
+    height             : 46px;
+    position           : relative;
+    bottom             : -23px;
+    background         : rgb(80, 80, 80);
+    display            : inline-block;
+    font-size          : 18px;
+    transform          : rotate(45deg);
+    text-align         : center;
+    z-index            : 10;
+    -webkit-transition : all 0.5s ease 0s;
+    -moz-transition    : all 0.5s ease 0s;
+    -o-transition      : all 0.5s ease 0s;
+    -ms-transition     : all 0.5s ease 0s;
+}
+
+footer a.Home i
+{
+    transform : rotate(-45deg);
+    position  : relative;
+    top       : -4px;
+    left      : -7px;
+}
+
+footer a.Home:hover
+{
+    box-shadow         : 0 0 0 30px #282828 inset;
+    -webkit-transition : all 0.5s ease 0s;
+    -moz-transition    : all 0.5s ease 0s;
+    -o-transition      : all 0.5s ease 0s;
+    -ms-transition     : all 0.5s ease 0s;
+}
+
+footer div
+{
+    background         : rgb(80, 80, 80);
+    display            : inline-block;
+    padding            : 5px 40px;
+    color              : #7d7d7d;
+    font-size          : 12px;
+    cursor             : pointer;
+
+    -webkit-transition : all 0.5s ease 0s;
+    -moz-transition    : all 0.5s ease 0s;
+    -o-transition      : all 0.5s ease 0s;
+    -ms-transition     : all 0.5s ease 0s;
+}
+
+footer div:hover
+{
+    /*box-shadow         : 0 0 0 30px #fff inset;*/
+    /*color              : #000;*/
+    /*-webkit-transition : all 1.2s ease 0s;*/
+    /*-moz-transition    : all 1.2s ease 0s;*/
+    /*-o-transition      : all 1.2s ease 0s;*/
+    /*-ms-transition     : all 1.2s ease 0s;*/
+}
+
+/**********************************************************************************************************************/
+
+.UPF-Window img
+{
+    width : 100%;
+}
+
+.Registration-Success
+{
+    color          : #7d7d7d;
+    text-transform : uppercase;
+    margin-top     : 28px;
+}
+
+.Registration-Error
+{
+    color          : #770101;
+    margin-top     : 28px;
+    font-weight    : bold;
+    text-transform : uppercase;
+}
+
+.Section-Title .Profession span
+{
+    line-height: 1.2;
+    letter-spacing: 4px;
+    font-family: Georgia;
+}
+
+.Section-Title .Profession i{
+    -webkit-animation : blink 1s linear 1s infinite normal;
+    -moz-animation    : blink 1s linear 1s infinite normal;
+    -o-animation      : blink 1s linear 1s infinite normal;
+    -ms-animation     : blink 1s linear 1s infinite normal;
+    animation         : blink 1s linear 1s infinite normal;
+}
+
+

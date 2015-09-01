@@ -1,0 +1,78 @@
+.UPF-Window
+{
+    position : fixed;
+    z-index  : 888888888;
+    top      : 0px;
+    bottom   : 0px;
+    left     : 0px;
+    right    : 0px;
+}
+
+
+.UPF-Window .UPF-Window-Wrapper
+{
+    position : absolute;
+    z-index  : 1;
+    top      : 0px;
+    bottom   : 0px;
+    left     : 0px;
+    right    : 0px;
+}
+
+.UPF-Window
+{
+    display : none;
+}
+
+.UPF-Window .UPF-Window-Wrapper
+{
+    background : rgba(0, 0, 0, 0.3);
+}
+
+.UPF-Window .UPF-Window-Content
+{
+    margin     : 2.5% auto 2.5%;
+    z-index    : 888;
+    position   : relative;
+    box-shadow : 0 0 30px black;
+    width      : 90%;
+    height     : 90%;
+    overflow-x : hidden;
+}
+
+.UPF-Window .UPF-Window-Close
+{
+    position      : absolute;
+    top           : 10px;
+    right         : 10px;
+    font-size     : 24px;
+    width         : 30px;
+    height        : 30px;
+    background    : none;
+    border        : none;
+    border-radius : 6px;
+    color         : #000;
+    font-family   : 'Open Sans', sans-serif;
+    cursor        : pointer;
+    z-index       : 888;
+}
+
+.UPF-Window .UPF-Window-Close:focus
+{
+    outline : none;
+    transition         : all 0.3s ease 0s;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    -ms-transition     : all 0.3s ease 0s;
+}
+
+.UPF-Window .UPF-Window-Close:hover
+{
+    color : white;
+    transition         : all 0.3s ease 0s;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    -ms-transition     : all 0.3s ease 0s;
+}
