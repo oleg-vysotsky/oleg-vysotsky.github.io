@@ -304,8 +304,8 @@ $(document).ready(function () {
     function FillInConnection() {
         FillStarted = true;
         var Phrases = [
-            'Влад',
-            'vlad@sonyprod.com',
+            'Владилав',
+            'vladislav@sonyprod.com',
             'Разработка каталога продукции Sony',
             'Привет! Необходимо разработать интернет каталог продукции Sony, запарсенной с оффициального сайта и дополненного ценами с сайтов дистрибюторов. Бюджет проекта 1500$. Сроки 3 недели.'
         ];
