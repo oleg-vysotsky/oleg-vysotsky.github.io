@@ -10,7 +10,7 @@ body
     height      : 100%;
     line-height : 2;
     font-size   : 13px;
-    overflow    : hidden;
+
 }
 
 #preloadedImages
@@ -429,7 +429,7 @@ img
     width           : 50%;
     height          : 100%;
     float           : left;
-    background      : url('/pictures/portrait.jpg') no-repeat center;
+    background      : url('../pictures/portrait.jpg') no-repeat center;
     background-size : cover;
     -webkit-transition : all 1.2s ease  0;
     -webkit-transition : all 1.2s ease  0;
@@ -442,7 +442,7 @@ img
 }
 
 .Section-About .Portrait:hover {
-    background: url('/pictures/portrait_hover.jpg') no-repeat center;
+    background: url('../pictures/portrait_hover.jpg') no-repeat center;
     background-size: cover;
     -webkit-transition : all 2s ease 0.3s;
     -moz-transition    : all 2s ease 0.3s;
@@ -1428,3 +1428,8 @@ footer div:hover
 }
 
 
+.Portfolio-Item-Head{
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}

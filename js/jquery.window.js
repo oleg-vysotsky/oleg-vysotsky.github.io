@@ -118,13 +118,7 @@
             });
 
 
-            $('.' + Class_WindowContent).niceScroll({
-                zindex:             100000,
-                cursorwidth:        '10px',
-                cursorborderradius: '0px',
-                cursorborder:       "1px solid rgba(0,0,0,0)",
-                cursorcolor:        '#7d7d7d'
-            });
+
 
 
             // Close By Click To Wrapper
