@@ -13,6 +13,22 @@ body
 
 }
 
+::-webkit-scrollbar
+{
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #888;
+}
+
 #preloadedImages
 {
     width: 0px;
