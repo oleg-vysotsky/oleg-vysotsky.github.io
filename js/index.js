@@ -16,9 +16,6 @@ $(document).ready(function () {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Set Head Position
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -53,7 +50,7 @@ $(document).ready(function () {
     $('.Portfolio-Item-Image').hover(function () {
         if (!PortfolioAnimation) {
             $('img', this).stop().animate({'top': -$('img', this).height() + 200 + 'px'}, $('img', this).height() *
-            3, 'linear');
+                3, 'linear');
             PortfolioAnimation = true;
         }
     }, function () {
@@ -189,9 +186,9 @@ $(document).ready(function () {
 
         if (ValidateEmail.test(Email) && Name.length > 0) {
             $.ajax({
-                url:     '/actions/connect.php',
-                type:    'POST',
-                data:    Query,
+                url: '/actions/connect.php',
+                type: 'POST',
+                data: Query,
                 success: function (Data) {
                     $('.Registration-Success, .Registration-Error').remove();
 
@@ -203,7 +200,7 @@ $(document).ready(function () {
                     $('[name=message]').val('');
 
                 },
-                error:   function () {
+                error: function () {
                     $('.Registration-Success, .Registration-Error').remove();
                     var Error = 'Registration error, try again later.';
                     if (location.pathname == '/') {
@@ -306,6 +303,7 @@ $(document).ready(function () {
         ];
         var FormLetter = 0,
             FormItem = 0,
+            FormEnter = false,
             FormTimer = false;
 
 
@@ -339,13 +337,31 @@ $(document).ready(function () {
             return false;
         }
 
-        FormTimer = setTimeout(FormFill, 1000);
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > $(document).height() - ($(window).height() * 2.2)) {
+                if(!FormEnter){
+                    clearTimeout(FormTimer);
+                    FormTimer = setTimeout(FormFill, 100);
+                }
+            }else{
+                clearTimeout(FormTimer);
+                FormItem = 0;
+                FormLetter = 0;
+                $('input,textarea').val('');
+            }
+        });
+
+
 
         $('.Form input,.Form textarea').click(function () {
             clearTimeout(FormTimer);
             FormItem = 0;
             FormLetter = 0;
             $('input,textarea').val('');
+            FormTimer = true;
+
+
 
             $('.Form input,.Form textarea').off('click');
         });
