@@ -967,10 +967,10 @@ header .Header-Icon:after
     bottom             : 0px;
     text-align         : center;
     padding            : 8px 0px;
-    background         : rgba(255, 255, 255, 0.82);
+    background         : rgba(255, 255, 255, 1);
     margin             : 0 auto;
     width              : 100%;
-    font-weight        : bold;
+
 
     -webkit-transition : all ease 0.3s;
     -moz-transition    : all ease 0.3s;
@@ -978,14 +978,7 @@ header .Header-Icon:after
     transition         : all ease 0.3s;
 }
 
-.Portfolio-Item:hover .Portfolio-Title
-{
-    background         : white;
-    -webkit-transition : all ease-out 0.3s;
-    -moz-transition    : all ease-out 0.3s;
-    -o-transition      : all ease-out 0.3s;
-    transition         : all ease-out 0.3s;
-}
+
 
 .Portfolio-Item:hover .Portfolio-Lightbox
 {
